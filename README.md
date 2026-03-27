@@ -11,6 +11,8 @@ Jointly train a hinter policy and a reasoner policy during RL. For each hard que
 
 </div>
 
+![overview](./assets/overview.png)
+
 ## 🌟 Overview
 
 GRPO suffers from **advantage collapse**: when all sampled rollouts for a question are incorrect, the group yields zero relative advantages and no gradient signal. HiLL addresses this by co-training a hinter policy alongside the reasoner with two key ideas:
@@ -18,8 +20,6 @@ GRPO suffers from **advantage collapse**: when all sampled rollouts for a questi
 **1. Failure-conditioned hint generation.** The hinter generates hints online, conditioned on the question, the current reasoner's failed rollout, and a reference solution. This allows hints to adapt to the reasoner's evolving weaknesses over training, unlike fixed or offline hints.
 
 **2. Hint reliance and transfer-weighted reward.** Not all hints that recover GRPO signal are equally useful. A hint that performs key reasoning steps directly induces high *hint reliance* — correct hinted trajectories become unlikely once the hint is removed, limiting transfer to the no-hint policy. HiLL introduces a transfer-weighted reward that penalizes high-reliance hints, steering the hinter toward concise, conceptual guidance that transfers back to no-hint inference.
-
-![overview](./assets/overview.png)
 
 ## 📦 Setup
 
