@@ -5,7 +5,7 @@
 Jointly train a hinter policy and a reasoner policy during RL. For each hard question that yields an all-incorrect GRPO group, the hinter generates hints online conditioned on the current reasoner's failure, recovering gradient signal while optimizing for transferability to the no-hint setting.
 
 <p align="center">
-  <a href="[TODO: arXiv link]"><img src="https://img.shields.io/badge/arXiv-TODO-b31b1b?style=flat&labelColor=555" alt="arXiv"></a>
+  <a href="https://arxiv.org/abs/2604.00698"><img src="https://img.shields.io/badge/arXiv-2604.00698-b31b1b?style=flat&labelColor=555" alt="arXiv"></a>
   <a href="https://github.com/Andree-9/HiLL"><img src="https://img.shields.io/badge/github-HiLL-181717?style=flat&labelColor=555&logo=github&logoColor=white" alt="GitHub"></a>
 </p>
 
@@ -66,10 +66,10 @@ If you find HiLL useful, please cite as:
       title={Hint Learning for Reinforcement Learning},
       author={Yu Xia and Canwen Xu and Zhewei Yao and Julian McAuley and Yuxiong He},
       year={2026},
-      eprint={TODO},
+      eprint={2604.00698},
       archivePrefix={arXiv},
       primaryClass={cs.LG},
-      url={https://arxiv.org/abs/TODO},
+      url={https://arxiv.org/pdf/2604.00698},
 }
 ```
 
