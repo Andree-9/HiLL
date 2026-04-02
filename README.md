@@ -1,6 +1,6 @@
 <div align="center">
 
-## HiLL: Hint Learning for Reinforcement Learning
+## Learning to Hint for Reinforcement Learning
 
 Jointly train a hinter policy and a reasoner policy during RL. For each hard question that yields an all-incorrect GRPO group, the hinter generates hints online conditioned on the current reasoner's failure, recovering gradient signal while optimizing for transferability to the no-hint setting.
 
@@ -65,7 +65,7 @@ If you find HiLL useful, please cite as:
 
 ```bibtex
 @misc{xia2026hill,
-      title={Hint Learning for Reinforcement Learning},
+      title={Learning to Hint for Reinforcement Learning},
       author={Yu Xia and Canwen Xu and Zhewei Yao and Julian McAuley and Yuxiong He},
       year={2026},
       eprint={2604.00698},
