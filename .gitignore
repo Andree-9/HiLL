@@ -215,7 +215,7 @@ wandb/
 outputs/
 
 # Training data (cloned from HuggingFace)
-data/
+/data/
 
 # Claude Code local settings
 .claude/
